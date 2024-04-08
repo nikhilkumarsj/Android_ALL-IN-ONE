@@ -1,0 +1,79 @@
+<!-- res/layout/popup_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/indentIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indent ID:"/>
+
+    <TextView
+        android:id="@+id/indentNoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indent No:"/>
+
+    <TextView
+        android:id="@+id/inddateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inddate:"/>
+
+    <TextView
+        android:id="@+id/vehicleNoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VehicleNo:"/>
+
+    <TextView
+        android:id="@+id/driverNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DriverName:"/>
+
+    <TextView
+        android:id="@+id/issuedByTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IssuedBy:"/>
+
+    <TextView
+        android:id="@+id/hsdLetersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HSDLeters:"/>
+
+    <TextView
+        android:id="@+id/hsdAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HSDAmount:"/>
+
+    <TextView
+        android:id="@+id/remarksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remarks:"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept" />
+
+        <Button
+            android:id="@+id/rejectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.all.ui.home.HomeFragment"
+        android:label="@string/menu_ppd"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.all.ui.gallery.GalleryFragment"
+        android:label="@string/menu_diesel"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.all.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_rake"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_generator"
+        android:name="com.example.all.ui.generator.GeneratorFragment"
+        android:label="@string/menu_generator"
+        tools:layout="@layout/fragment_generator" />
+
+    <fragment
+        android:id="@+id/nav_internal"
+        android:name="com.example.all.ui.internal.InternalFragment"
+        android:label="@string/menu_internal"
+        tools:layout="@layout/fragment_internal" />
+
+    <fragment
+        android:id="@+id/nav_indent"
+        android:name="com.example.all.ui.indent.IndentFragment"
+        android:label="@string/menu_indent"
+        tools:layout="@layout/fragment_indent" />
+
+</navigation>

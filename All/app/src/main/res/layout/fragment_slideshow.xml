@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/From"
+            android:layout_margin="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:id="@+id/date"
+                android:focusable="false"
+                android:drawableRight="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="8dp"
+                android:background="@null"
+                android:onClick="showFromDatePicker"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/To"
+            android:layout_margin="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:id="@+id/toDate"
+                android:focusable="false"
+                android:drawableRight="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="8dp"
+                android:background="@null"
+                android:onClick="showToDatePicker"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="110dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/Vibrant_Indigo"
+            android:text="Submit" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:id="@+id/ResponseTab">
+
+        </TableLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

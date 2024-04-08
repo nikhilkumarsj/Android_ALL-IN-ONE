@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background_main"
+tools:context=".ui.indent.IndentFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/issuesby_edit"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toEndOf="@+id/issuesby"
+        android:hint="@string/enter_issues_here"
+        android:padding="15dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/issuesby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autoSizeTextType="uniform"
+        android:padding="15dp"
+        android:text="@string/issues_by"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vehicalnumberdropdown"
+        android:layout_width="245dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/issuesby_edit"
+        android:layout_alignStart="@+id/issuesby_edit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="3dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableEnd="@drawable/baseline_arrow_drop_down_circle_24"
+        android:gravity="center_vertical"
+        android:hint="Select Vehicle"
+        android:scrollbarStyle="insideInset" />
+
+    <TextView
+        android:id="@+id/vehicaltext"
+        android:layout_width="160dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/issuesby"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="2dp"
+        android:layout_toStartOf="@+id/vehicalnumberdropdown"
+        android:padding="15dp"
+        android:text="@string/vehicle_no"
+        android:textAlignment="inherit"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/bunkdropdown"
+        android:layout_width="244dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/vehicalnumberdropdown"
+        android:layout_alignStart="@+id/vehicalnumberdropdown"
+        android:layout_alignEnd="@+id/vehicalnumberdropdown"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="3dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableEnd="@drawable/baseline_arrow_drop_down_circle_24"
+        android:gravity="center_vertical"
+        android:hint="Select Bunk"
+        android:scrollbarStyle="insideInset" />
+
+    <TextView
+        android:id="@+id/bunktext"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vehicaltext"
+        android:layout_alignEnd="@+id/vehicaltext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="-2dp"
+        android:padding="10dp"
+        android:text="@string/bunk"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bunkcash"
+        android:layout_width="213dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/bunkdropdown"
+        android:layout_alignStart="@+id/bunkdropdown"
+        android:layout_alignEnd="@+id/bunkdropdown"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="-4dp"
+        android:hint= "@string/enter_cash_here"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/bunkcashtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bunktext"
+        android:layout_alignStart="@+id/bunktext"
+        android:layout_alignEnd="@+id/bunktext"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="-5dp"
+        android:padding="10dp"
+        android:text="@string/bunk_cash"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bunkcash"
+        android:layout_alignStart="@+id/bunkcash"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="5dp"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:hint="@string/select_date"
+        android:inputType="date"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/datetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bunkcashtext"
+        android:layout_alignStart="@+id/bunkcashtext"
+        android:layout_alignEnd="@+id/bunkcashtext"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-3dp"
+        android:padding="10dp"
+        android:text="@string/date"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hsdtext"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datetext"
+        android:layout_alignEnd="@+id/datetext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-1dp"
+        android:padding="10dp"
+        android:text="@string/hsd"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/hsdeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_below="@+id/editTextDate"
+        android:layout_alignStart="@+id/editTextDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="-1dp"
+        android:ems="10"
+        android:hint="Enter HSD here"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/hsdamounttext"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hsdtext"
+        android:layout_alignEnd="@+id/hsdtext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="-2dp"
+        android:text="@string/hsd_amount"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/hsdamountedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_below="@+id/hsdeditText"
+        android:layout_alignStart="@+id/hsdeditText"
+        android:layout_alignRight="@+id/hsdamounttext"
+        android:layout_alignBottom="@+id/hsdamounttext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginRight="-259dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Enter HSD Amount here"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/drivertext"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hsdamounttext"
+        android:layout_alignEnd="@+id/hsdamounttext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="0dp"
+        android:text="Driver"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/driverrdropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_below="@+id/hsdamountedittext"
+        android:layout_alignStart="@+id/hsdamountedittext"
+        android:layout_alignEnd="@+id/hsdamountedittext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="0dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableEnd="@drawable/baseline_arrow_drop_down_circle_24"
+        android:gravity="center_vertical"
+        android:hint="Select Driver"
+        android:scrollbarStyle="insideInset" />
+
+    <TextView
+        android:id="@+id/bycantext"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/drivertext"
+        android:layout_alignEnd="@+id/hsdamounttext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="0dp"
+        android:text="By can"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/bycancheckbox"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/driverrdropdown"
+        android:layout_alignRight="@+id/bycantext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="-124dp"
+        android:layout_toEndOf="@+id/bycantext" />
+
+    <TextView
+        android:id="@+id/remarkstext"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/bycantext"
+        android:layout_alignEnd="@+id/bycantext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="3dp"
+        android:text="@string/remarks"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/remarksedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@+id/bycancheckbox"
+        android:layout_alignStart="@+id/bycancheckbox"
+        android:layout_alignEnd="@+id/bycancheckbox"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="-114dp"
+        android:layout_marginRight="-259dp"
+        android:hint="Enter Remarks here" />
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/remarksedittext"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:text="Submit" />
+
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_ppd" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="@string/menu_rake" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/menu_diesel" />
+
+        <item
+            android:id="@+id/nav_generator"
+            android:title="@string/menu_generator" />
+
+        <item
+            android:id="@+id/nav_internal"
+            android:title="@string/menu_internal" />
+
+        <item
+            android:id="@+id/nav_indent"
+            android:title="@string/menu_indent" />
+
+    </group>
+</menu>

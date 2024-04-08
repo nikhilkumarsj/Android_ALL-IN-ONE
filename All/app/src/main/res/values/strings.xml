@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Balaji Transports</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Balaji Transports</string>
+    <string name="nav_header_subtitle">balaji.branch@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+
+    <string name="menu_ppd">PPD Shipment Details</string>
+    <string name="menu_rake">Rake Shipment Details</string>
+    <string name="menu_diesel">Diesel Issue Status</string>
+
+    <string name="menu_generator">Internal Transfer Transaction</string>
+    <string name="menu_internal">GC Generator</string>
+    <string name="menu_indent">Indent Generator</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="DriverName">Driver Name</string>
+    <string name="Date">Date</string>
+    <string name="VehicleNo">Vehicle Number</string>
+    <string name="CoilID">Coil ID</string>
+    <string name="Tonnage">Tonnage</string>
+    <string name="PageRefNo">Page Ref No</string>
+    <string name="Remarks">Remarks</string>
+    <string name="Done">Done</string>
+    <string name="submit">Submit</string>
+
+    <string name="Material">Material</string>
+    <string name="Invoice">Invoice</string>
+    <string name="Submit">Submit</string>
+    <string name="Add">Add</string>
+    <string name="Back">Close</string>
+    <string name="Unload">Unload</string>
+    <string name="Search">Search</string>
+    <string name="Logout">Logout</string>
+    <string name="SelectAll">Select All</string>
+    <string name="Clear">Clear</string>
+
+    <string name="bunk_cash">Bunk Cash</string>
+    <string name="date">Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="enter_issues_here">Enter Issued by Here</string>
+    <string name="vehicle_no">Vehicle NO</string>
+    <string name="hsd">HSD</string>
+    <string name="bunk">Bunk</string>
+    <string name="enter_cash_here">Enter Bunk Cash Here</string>
+    <string name="issues_by">Issued by</string>
+    <string name="hsd_amount">HSD Amount</string>
+    <string name="remarks">Remarks</string>
+    <string name="select_vehicle">Select vehicle Number</string>
+    <string name="bunkcash">BunkCash</string>
+    <string name="balaji_transports">Balaji Transports</string>
+    <string-array name="vehicalnumberdropdown">
+        <item>Select Vehicle Number</item>
+        <item>Item1</item>
+        <item>Item2</item>
+        <item>Item3</item>
+    </string-array>
+
+</resources>
